@@ -58,15 +58,10 @@ Route::patch('/posts/{post}', function (Post $post) {
 
 
 
-
-
-
 //user registration routes
-
 Route::get('/register', [UserController::class, 'index']);
 Route::get('/register/create', [UserController::class, 'create']);
 Route::post('/register', [UserController::class, 'store']);
 Route::get('/register/show/{user}', [UserController::class, 'show']);
 Route::patch('/register/update/{user}', [UserController::class, 'update']);
 Route::delete('/register/delete/{user}', [UserController::class, 'destroy']);
-
